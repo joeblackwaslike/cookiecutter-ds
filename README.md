@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/joeblackwaslike/cookiecutter-ds/main/docs/static/cookiecutter.svg">
+  <img width="600" src="https://raw.githubusercontent.com/joeblackwaslike/cookiecutter-ds/refs/heads/main/docs/static/cookiecutter.svg">
 </p style = "margin-bottom: 2rem;">
 
 ---

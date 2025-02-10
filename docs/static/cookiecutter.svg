@@ -1,47 +1,87 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      #background { fill: #1a1a1a; }
+      #cookie-outer { fill: #b38b5c; }
+      #cookie-inner { fill: #a67c4c; }
+      #data-points circle { fill: #e0e0e0; }
+      #connections path { stroke: #808080; }
+      #python-logo .path1 { stroke: #4584b6; }
+      #python-logo .path2 { stroke: #ffde57; }
+      #title { fill: #ffffff; }
+      #decorative .graph { stroke: #4584b6; }
+      #decorative .graph2 { stroke: #ffde57; }
+      #scatter-plot circle { fill: #4584b6; }
+      #bar-chart rect { fill: #ffde57; }
+    }
+    @media (prefers-color-scheme: light) {
+      #background { fill: #f8f9fa; }
+      #cookie-outer { fill: #d4a76a; }
+      #cookie-inner { fill: #c68b59; }
+      #data-points circle { fill: #3a3a3a; }
+      #connections path { stroke: #5c5c5c; }
+      #python-logo .path1 { stroke: #306998; }
+      #python-logo .path2 { stroke: #FFD43B; }
+      #title { fill: #333333; }
+      #decorative .graph { stroke: #306998; }
+      #decorative .graph2 { stroke: #FFD43B; }
+      #scatter-plot circle { fill: #306998; }
+      #bar-chart rect { fill: #FFD43B; }
+    }
+  </style>
+  
   <!-- Background -->
-  <rect width="800" height="400" fill="#f8f9fa"/>
+  <rect id="background" width="800" height="400"/>
   
-  <!-- Cookie shape with data-science themed pattern -->
-  <circle cx="400" cy="200" r="150" fill="#d4a76a"/>
-  <circle cx="400" cy="200" r="140" fill="#c68b59"/>
+  <!-- Cookie shape -->
+  <circle id="cookie-outer" cx="400" cy="200" r="150"/>
+  <circle id="cookie-inner" cx="400" cy="200" r="140"/>
   
-  <!-- Data Science Elements -->
-  <!-- Chocolate chips styled as data points -->
-  <circle cx="320" cy="150" r="15" fill="#3a3a3a"/>
-  <circle cx="480" cy="150" r="15" fill="#3a3a3a"/>
-  <circle cx="350" cy="250" r="15" fill="#3a3a3a"/>
-  <circle cx="450" cy="250" r="15" fill="#3a3a3a"/>
-  <circle cx="400" cy="180" r="15" fill="#3a3a3a"/>
+  <!-- Data Points -->
+  <g id="data-points">
+    <circle cx="320" cy="150" r="15"/>
+    <circle cx="480" cy="150" r="15"/>
+    <circle cx="350" cy="250" r="15"/>
+    <circle cx="450" cy="250" r="15"/>
+    <circle cx="400" cy="180" r="15"/>
+  </g>
   
-  <!-- Connecting lines suggesting data relationships -->
-  <path d="M320,150 L400,180 L480,150" stroke="#5c5c5c" stroke-width="3" fill="none"/>
-  <path d="M350,250 L400,180 L450,250" stroke="#5c5c5c" stroke-width="3" fill="none"/>
+  <!-- Connections -->
+  <g id="connections">
+    <path d="M320,150 L400,180 L480,150" stroke-width="3" fill="none"/>
+    <path d="M350,250 L400,180 L450,250" stroke-width="3" fill="none"/>
+  </g>
   
   <!-- Python Logo suggestion -->
-  <path d="M270,200 Q400,120 530,200" stroke="#306998" stroke-width="8" fill="none"/>
-  <path d="M270,200 Q400,280 530,200" stroke="#FFD43B" stroke-width="8" fill="none"/>
+  <g id="python-logo">
+    <path class="path1" d="M270,200 Q400,120 530,200" stroke-width="8" fill="none"/>
+    <path class="path2" d="M270,200 Q400,280 530,200" stroke-width="8" fill="none"/>
+  </g>
   
   <!-- Text -->
-  <text x="400" y="380" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+  <text id="title" x="400" y="380" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">
     cookiecutter-ds
   </text>
   
   <!-- Decorative elements -->
-  <!-- Graph/chart suggestions -->
-  <path d="M600,150 L620,130 L640,160 L660,120 L680,140" stroke="#306998" stroke-width="3" fill="none"/>
-  <path d="M120,150 L140,170 L160,140 L180,180 L200,150" stroke="#FFD43B" stroke-width="3" fill="none"/>
+  <g id="decorative">
+    <path class="graph" d="M600,150 L620,130 L640,160 L660,120 L680,140" stroke-width="3" fill="none"/>
+    <path class="graph2" d="M120,150 L140,170 L160,140 L180,180 L200,150" stroke-width="3" fill="none"/>
+  </g>
   
-  <!-- Data science icons -->
-  <!-- Scatter plot suggestion -->
-  <circle cx="130" cy="280" r="3" fill="#306998"/>
-  <circle cx="140" cy="270" r="3" fill="#306998"/>
-  <circle cx="150" cy="290" r="3" fill="#306998"/>
-  <circle cx="160" cy="275" r="3" fill="#306998"/>
+  <!-- Scatter plot -->
+  <g id="scatter-plot">
+    <circle cx="130" cy="280" r="3"/>
+    <circle cx="140" cy="270" r="3"/>
+    <circle cx="150" cy="290" r="3"/>
+    <circle cx="160" cy="275" r="3"/>
+  </g>
   
-  <!-- Bar chart suggestion -->
-  <rect x="620" y="260" width="10" height="30" fill="#FFD43B"/>
-  <rect x="635" y="250" width="10" height="40" fill="#FFD43B"/>
-  <rect x="650" y="270" width="10" height="20" fill="#FFD43B"/>
-  <rect x="665" y="240" width="10" height="50" fill="#FFD43B"/>
+  <!-- Bar chart -->
+  <g id="bar-chart">
+    <rect x="620" y="260" width="10" height="30"/>
+    <rect x="635" y="250" width="10" height="40"/>
+    <rect x="650" y="270" width="10" height="20"/>
+    <rect x="665" y="240" width="10" height="50"/>
+  </g>
 </svg>
