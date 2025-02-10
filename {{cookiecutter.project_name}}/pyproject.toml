@@ -14,7 +14,18 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "importlib-metadata >=7.1.0,<8; python_version < '3.10'",
+  "better_exceptions",
+  "datasets",
+  "importlib-metadata >=7.1.0,<8; python_version < '3.10'",
+  "ipython",
+  "jupyterlab",
+  "loguru",
+  "matplotlib",
+  "notebook",
+  "numpy",
+  "pandas",
+  "python-dotenv",
+  "scikit-learn", 
 ]
 
 [project.urls]
@@ -28,7 +39,6 @@ dev = [
     "pytest>=8.1",
     "pre-commit>=2.20.0",
     "tox-uv>=1.11.3",
-    "wemake-python-styleguide>=1.0.0",
     {% if cookiecutter.deptry == 'y' %}"deptry>=0.22.0",{% endif %}
     "mypy>=1.13",
     {% if cookiecutter.codecov == 'y' %}"pytest-cov>=6.0.0",{% endif %}

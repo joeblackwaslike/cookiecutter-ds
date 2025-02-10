@@ -1,13 +1,13 @@
 <p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/joeblackwaslike/cookiecutter-uv/main/docs/static/cookiecutter.svg">
+  <img width="600" src="https://raw.githubusercontent.com/joeblackwaslike/cookiecutter-ds/main/docs/static/cookiecutter.svg">
 </p style = "margin-bottom: 2rem;">
 
 ---
 
-[![Build status](https://img.shields.io/github/actions/workflow/status/joeblackwaslike/cookiecutter-uv/main.yml?branch=main)](https://github.com/joeblackwaslike/cookiecutter-uv/actions/workflows/main.yml?query=branch%3Amain)
-[![Supported Python versions](https://img.shields.io/badge/python-3.9_%7C_3.10_%7C_3.11_%7C_3.12_%7C_3.13-blue?labelColor=grey&color=blue)](https://github.com/joeblackwaslike/cookiecutter-uv/blob/main/pyproject.toml)
-[![Docs](https://img.shields.io/badge/docs-gh--pages-blue)](https://joeblackwaslike.github.io/cookiecutter-uv/)
-[![License](https://img.shields.io/github/license/joeblackwaslike/cookiecutter-uv)](https://img.shields.io/github/license/joeblackwaslike/cookiecutter-uv)
+[![Build status](https://img.shields.io/github/actions/workflow/status/joeblackwaslike/cookiecutter-ds/main.yml?branch=main)](https://github.com/joeblackwaslike/cookiecutter-ds/actions/workflows/main.yml?query=branch%3Amain)
+[![Supported Python versions](https://img.shields.io/badge/python-3.9_%7C_3.10_%7C_3.11_%7C_3.12_%7C_3.13-blue?labelColor=grey&color=blue)](https://github.com/joeblackwaslike/cookiecutter-ds/blob/main/pyproject.toml)
+[![Docs](https://img.shields.io/badge/docs-gh--pages-blue)](https://joeblackwaslike.github.io/cookiecutter-ds/)
+[![License](https://img.shields.io/github/license/joeblackwaslike/cookiecutter-ds)](https://img.shields.io/github/license/joeblackwaslike/cookiecutter-ds)
 
 This is a modern Cookiecutter template that can be used to initiate a Python project with all the necessary tools for development, testing, and deployment. It supports the following features:
 
@@ -26,7 +26,7 @@ This is a modern Cookiecutter template that can be used to initiate a Python pro
 ---
 
 <p align="center">
-  <a href="https://joeblackwaslike.github.io/cookiecutter-uv/">Documentation</a> - <a href="https://github.com/joeblackwaslike/cookiecutter-uv-example">Example</a>
+  <a href="https://joeblackwaslike.github.io/cookiecutter-ds/">Documentation</a> - <a href="https://github.com/joeblackwaslike/cookiecutter-ds-example">Example</a>
 </p>
 
 ---
@@ -38,19 +38,19 @@ create a project directory, and run the following command:
 
 If cookiecutter is already installed
 ```shell
-cookiecutter gh:joeblackwaslike/cookiecutter-uv
+cookiecutter gh:joeblackwaslike/cookiecutter-ds
 ```
 
 If you have `uv` installed but not `cookiecutter`
 ```shell
-uvx cookiecutter gh:joeblackwaslike/cookiecutter-uv
+uvx cookiecutter gh:joeblackwaslike/cookiecutter-ds
 ```
 
 or if you don't have `uv` installed yet:
 
 ```shell
 pipx install cookiecutter
-cookiecutter gh:joeblackwaslike/cookiecutter-uv
+cookiecutter gh:joeblackwaslike/cookiecutter-ds
 ```
 
 Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.

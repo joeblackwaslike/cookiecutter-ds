@@ -1,17 +1,18 @@
 [project]
-name = "cookiecutter-uv"
+name = "cookiecutter-ds"
 version = "1.1.0"
-description = "A python cookiecutter application to create a new python project that uses uv to manage its dependencies."
+description = "A python cookiecutter application to create a new python data science project."
 authors = [{ name = "Joe Black", email = "me@joeblack.nyc" }]
 readme = "README.md"
-keywords = ['cookiecutter', 'template', 'uv']
+keywords = ['cookiecutter', 'template', 'data-science']
 requires-python = ">=3.9,<4.0"
 dependencies = [
-  "cookiecutter>=2.1.1"
+  "cookiecutter>=2.1.1",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -22,13 +23,15 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Software Development :: Code Generators",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 
 
 [project.urls]
-Repository = "https://github.com/fpgmaas/cookiecutter-uv"
-Documentation = "https://fpgmaas.github.io/cookiecutter-uv/"
-Homepage = "https://fpgmaas.github.io/cookiecutter-uv/"
+Repository = "https://github.com/joeblackwaslike/cookiecutter-ds"
+Documentation = "https://joeblackwaslike.github.io/cookiecutter-ds/"
+Homepage = "https://joeblackwaslike.github.io/cookiecutter-ds/"
 
 [dependency-groups]
 dev = [
