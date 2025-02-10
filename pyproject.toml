@@ -53,10 +53,10 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["cookiecutter_uv"]
+packages = ["cookiecutter_ds"]
 
 [tool.setuptools.package-data]
-"cookiecutter_uv" = ["*"]
+"cookiecutter_ds" = ["*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -66,10 +66,10 @@ skip_empty = true
 
 [tool.coverage.run]
 branch = true
-source = ["cookiecutter_uv"]
+source = ["cookiecutter_ds"]
 
 [tool.mypy]
-files = ['cookiecutter_uv']
+files = ['cookiecutter_ds']
 disallow_untyped_defs = true
 disallow_any_unimported = true
 no_implicit_optional = true

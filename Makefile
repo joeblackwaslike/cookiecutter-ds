@@ -14,7 +14,7 @@ bake-and-test-deploy: ## For quick publishing to cookiecutter-ds-example to test
 		email="me@joeblack.nyc" \
 		github_author_handle=joeblackwaslike \
 		project_name=cookiecutter-ds-example \
-		project_slug=cookiecutter_uv_example
+		project_slug=cookiecutter_ds_example
 	@cd cookiecutter-ds-example; uv sync && \
 		git init -b main && \
 		git add . && \
