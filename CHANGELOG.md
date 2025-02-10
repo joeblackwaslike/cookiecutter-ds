@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 ### Changed
+- Changed project name to cookiecutter-ds which will focus on bootstrapping new data science projects.
+- Updated the README.md file to reflect the new project name.
+- Updated the docs to reflect the new project name.
+- Updated the prompt arguments to reflect the new project name.
 
 ### Removed
 
